@@ -30,7 +30,7 @@
                         <tbody>
                             {foreach from="$admins" item="admin"}
                                 <tr class="collapse">
-                                    <td>{$admin.user} (<a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=admin"
+                                    <td style="text-overflow: ellipsis; overflow: hidden; max-width: 10ch;">{$admin.user} (<a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=admin"
                                             title="Show bans">{$admin.bancount} bans</a> | <a
                                             href="./index.php?p=banlist&advSearch={$admin.aid}&advType=nodemo"
                                             title="Show bans without demo">{$admin.nodemocount} w.d.</a>)</td>
@@ -52,7 +52,7 @@
                                                         </li>
                                                         <li class="button button-light">
                                                             <a href="index.php?p=admin&c=admins&o=editpermissions&id={$admin.aid}">
-                                                                <i class="fas fa-subscript"></i> Edit Permissions
+                                                                <i class="fas fa-edit fa-lg"></i> Edit Permissions
                                                             </a>
                                                         </li>
                                                         <li class="button button-light">
@@ -67,7 +67,7 @@
                                                         </li>
                                                     {/if}
                                                     {if $permission_deleteadmin}
-                                                        <li class="button button-light">
+                                                        <li class="button button-important">
                                                             <a href="#" onclick="RemoveAdmin({$admin.aid}, '{$admin.user}');">
                                                                 <i class="fas fa-trash"></i> Delete Admin
                                                             </a>

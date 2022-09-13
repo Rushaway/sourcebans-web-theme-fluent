@@ -57,7 +57,7 @@
                                     {/if}
                                     {if $permission_deletemods}
                                         <button onclick="RemoveMod('{$mod.name|escape:'quotes'|htmlspecialchars}', '{$mod.mid}');"
-                                            class="button button-light">
+                                            class="button button-important">
                                             Delete
                                         </button>
                                     {/if}

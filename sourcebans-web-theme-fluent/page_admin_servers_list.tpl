@@ -45,21 +45,21 @@
                                     <ul class="list-reset list-margin:right flex flex:ai:center flex-jc:center">
                                         {if $server.rcon_access}
                                             <li>
-                                                <a class="button button-light"
+                                                <a class="button button-light margin-right:half"
                                                     href="index.php?p=admin&c=servers&o=rcon&id={$server.sid}">
                                                     RCON
                                                 </a>
                                             </li>
                                         {/if}
                                         <li>
-                                            <a class="button button-light"
+                                            <a class="button button-light margin-right:half"
                                                 href="index.php?p=admin&c=servers&o=admincheck&id={$server.sid}">
                                                 Admins
                                             </a>
                                         </li>
                                         {if $permission_editserver}
                                             <li>
-                                                <a class="button button-light"
+                                                <a class="button button-light margin-right:half"
                                                     href="index.php?p=admin&c=servers&o=edit&id={$server.sid}">
                                                     Edit
                                                 </a>
@@ -67,7 +67,7 @@
                                         {/if}
                                         {if $pemission_delserver}
                                             <li>
-                                                <button class="button button-light"
+                                                <button class="button button-important margin-right:half"
                                                     onclick="RemoveServer({$server.sid}, '{$server.ip}:{$server.port}');">
                                                     Delete
                                                 </button>
