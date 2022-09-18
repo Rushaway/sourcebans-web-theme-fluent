@@ -6,7 +6,7 @@ const selectElements = {
     dark: document.querySelector('#user_action_change_dark')
 };
 
-const colorBackground = `.tee .layout_box_title, .tablerow4, .admin_tab_ul a:hover, .admin_tab_ul button:hover, .tee .table table thead, .tee .table table td.listtable_top, .tee .admin_nav, .tee .button-primary, .tee .form-check:checked, .tee #tabsWrapper #tabs ul, .tee .admin_tab_ul li a:hover, .tee .admin_tab_ul li button:hover, .tee .form-radio:checked`;
+const colorBackground = `.tee .layout_box_title, .tablerow4, .admin_tab_ul a:hover, .admin_tab_ul button:hover, .tee .table table thead, .tee .table table td.listtable_top, .tee .admin_nav, .button_search, .tee .button-primary, .tee .form-check:checked, .tee #tabsWrapper #tabs ul, .tee .admin_tab_ul li a:hover, .tee .admin_tab_ul li button:hover, .tee .form-radio:checked`;
 
 const colorBorder = ".tee .nav ul li.active, .tee .form-check:checked, .tee .form-check:focus, .tee .form-input:focus, .tee .form-select:focus, .tee .form-text:focus, .tee .form-file:focus, .tee .form-radio:focus, .tee .form-radio:checked";
 
