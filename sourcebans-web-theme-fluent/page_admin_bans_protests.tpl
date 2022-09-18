@@ -48,17 +48,18 @@
                                 {/if}
                             </td>
                             <td class="flex flex-jc:center flex-ai:center">
+
+                                <a href="index.php?p=admin&c=bans&o=email&type=p&id={$protest.pid}"
+                                    class="button button-primary margin-right:half">
+                                    Contact
+                                </a>
+
                                 {if $permission_editban}
-                                    <button class="button button-light margin-right:half"
+                                    <button class="button button-success margin-right:half"
                                         onclick="RemoveProtest('{$protest.pid}', '{if $protest.authid!=""}{$protest.authid}{else}{$protest.ip}{/if}', '1');">
                                         Archive
                                     </button>
                                 {/if}
-
-                                <a href="index.php?p=admin&c=bans&o=email&type=p&id={$protest.pid}"
-                                    class="button button-primary">
-                                    Contact
-                                </a>
                             </td>
                         </tr>
 
@@ -74,7 +75,7 @@
 
                                         <ul class="ban_list_detal">
                                             <li>
-                                                <span>Player</span>
+                                                <span><i class="fa-solid fa-user"></i> Player</span>
                                                 <span>
                                                     <a href="./index.php?p=banlist&advSearch={$protest.authid}&advType=steamid"
                                                         title="Show ban">
@@ -84,30 +85,30 @@
                                             </li>
 
                                             <li>
-                                                <span>Steam ID</span>
+                                                <span><i class="fa-brands fa-steam"></i> Steam ID</span>
                                                 {if $protest.authid == ""}
                                                     <span class="text:italic">No steamid present</span>
                                                 {else}
-                                                    <span>{$protest.authid}</span>
+                                                    <a href="https://www.steamidfinder.com/lookup/{$protest.authid}" target="_blank" rel="noopener">{$protest.authid}</a>
                                                 {/if}
                                             </li>
 
                                             <li>
-                                                <span>IP address</span>
+                                                <span><i class="fa-solid fa-network-wired"></i> IP address</span>
                                                 {if $protest.ip == 'none' || $protest.ip == ''}
                                                     <span class="text:italic">No IP address present</span>
                                                 {else}
-                                                    <span>{$protest.ip}</span>
+                                                    <a href="http://geoiplookup.net/ip/{$protest.ip}" target="_blank" rel="noopener">{$protest.ip}</a>
                                                 {/if}
                                             </li>
 
                                             <li>
-                                                <span>Invoked on</span>
+                                                <span><i class="fa-solid fa-play"></i> Invoked on</span>
                                                 <span>{$protest.date}</span>
                                             </li>
 
                                             <li>
-                                                <span>End Date</span>
+                                                <span><i class="fas fa-clock"></i> End Date</span>
                                                 {if $protest.ends == 'never'}
                                                     <span class="text:italic">Not applicable.</span>
                                                 {else}
@@ -116,27 +117,27 @@
                                             </li>
 
                                             <li>
-                                                <span>Reason</span>
+                                                <span><i class="fas fa-question"></i> Reason</span>
                                                 <span>{$protest.ban_reason}</span>
                                             </li>
 
                                             <li>
-                                                <span>Banned by Admin</span>
+                                                <span><i class="fas fa-ban"></i> Banned by Admin</span>
                                                 <span>{$protest.admin}</span>
                                             </li>
 
                                             <li>
-                                                <span>Banned from</span>
+                                                <span><i class="fa-solid fa-server"></i> Banned from</span>
                                                 <span>{$protest.server}</span>
                                             </li>
 
                                             <li>
-                                                <span>Protester IP</span>
-                                                <span>{$protest.pip}</span>
+                                                <span><i class="fa-solid fa-network-wired"></i> Protester IP</span>
+                                                <a href="http://geoiplookup.net/ip/{$protest.pip}" target="_blank" rel="noopener">{$protest.pip}</a>
                                             </li>
 
                                             <li>
-                                                <span>Protested on</span>
+                                                <span><i class="fa-solid fa-calendar-days"></i> Protested on</span>
                                                 <span>{$protest.datesubmitted}</span>
                                             </li>
                                         </ul>
@@ -144,15 +145,11 @@
 
                                     <div class="ban_list_comments margin-bottom">
                                         <div class="layout_box_title">
-                                            <h2>Protest message</h2>
+                                            <h2><i class="fa-solid fa-pen-to-square"></i> Protest message</h2>
                                         </div>
 
-                                        <div class="layout_box-child padding margin">
+                                        <div class="layout_box-child padding margin:half">
                                             <div class="ban_list_comments_header">
-                                                <span class="text:bold">{$protest.name}</span>
-                                            </div>
-
-                                            <div class="margin-top flex flex-fd:column">
                                                 {$protest.reason}
                                             </div>
                                         </div>
@@ -160,7 +157,7 @@
 
                                     <div class="ban_list_comments">
                                         <div class="layout_box_title">
-                                            <h2>Comments</h2>
+                                            <h2><i class="fa-regular fa-comments"></i> Comments</h2>
                                         </div>
 
                                         {if $protest.commentdata != "None"}
