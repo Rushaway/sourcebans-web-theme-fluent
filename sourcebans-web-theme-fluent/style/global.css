@@ -1207,6 +1207,49 @@ li.layout_box_title {
   font-weight: bold;
 }
 
+/* ================ Header - Searchbox ================ */
+.searchbox {
+  width: 200px;
+  padding: 5px 3px 5px 3px;
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+  border:0;
+  margin-bottom: 5px;
+}
+
+.button_search {
+  border: 0;
+  height: 26px;
+  color: #fff !important;
+  background-color: var(--layout_main--color);
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: var(--border--radius);
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.button_search::after {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+
 /** ================ Permissions ================ **/
 .tablerow4 {
   background-color: var(--layout_main--color);
