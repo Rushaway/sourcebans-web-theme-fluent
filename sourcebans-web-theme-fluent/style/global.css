@@ -58,8 +58,12 @@
   --sp-8: 40px;
   --sp-9: 48px;
   --sp-10: 64px;
-  --radius-1: 4px;
-  --radius-2: 8px;
+  --radius-1: 2px;
+  --radius-2: 3px;
+  --radius-3: 4px;
+  --radius-4: 5px;
+  --radius-5: 6px;
+  --radius-6: 8px;
   --size-1: 20px;
   --size-2: 24px;
   --size-3: 30px;
@@ -306,8 +310,8 @@ span.right {
 }
 
 .table table tbody td:first-child img {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
 }
 
 .table_hide > td {
@@ -546,7 +550,7 @@ span.right {
 .message {
   position: relative;
   margin-bottom: 10px;
-  border-radius: 4px;
+  border-radius: var(--radius-3);
   padding: 16px 16px 16px 44px;
   color: #fff;
 }
@@ -679,6 +683,7 @@ span.right {
   font-size: 24px;
   font-weight: 500;
   max-width: 800px;
+  text-align: center;
 }
 
 .error_code {
@@ -705,6 +710,7 @@ span.right {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
   color: #fff;
+  border-radius: var(--border--radius);
 }
 
 li.layout_box_title {
@@ -734,7 +740,7 @@ li.layout_box_title {
 .layout_box-child {
   -webkit-box-shadow: var(--box-shadow--child);
           box-shadow: var(--box-shadow--child);
-  border-radius: 4px;
+  border-radius: var(--radius-3);
 }
 
 .layout_topBar {
@@ -1173,7 +1179,7 @@ li.layout_box_title {
   position: fixed;
   opacity: 0;
   top: 5px;
-  right: 345px;
+  right: 330px;
   z-index: 2000;
   border: 0;
   cursor: pointer;
@@ -1946,13 +1952,13 @@ div.contextmenu {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 4px;
+    border-radius: var(--radius-3);
     width: 10em;
     padding-bottom: 2px
 }
 
 div.contextmenu .head {
-    border-radius: 4px;
+    border-radius: var(--radius-3);
     font-size: 12px;
     background-color: #f2f8f9;
     padding-top: 4px;
@@ -1998,7 +2004,7 @@ div.contextmenu .separator {
   font-size: 13px;
   padding: 5px 8px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: var(--radius-2);
 }
 
 .textbox {
@@ -2006,13 +2012,13 @@ div.contextmenu .separator {
   font-size: 13px;
   padding: 6px 12px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: var(--radius-2);
 }
 
 .file {
   background: #fff;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: var(--radius-2);
   padding: 3px;
 }
 
@@ -2041,7 +2047,7 @@ hr {
 
 .admin_nav {
   background-color: var(--layout_main--color);
-  border-radius: 4px;
+  border-radius: var(--radius-3);
   width: 100%;
   overflow-x: auto;
   color: #fff;
@@ -2137,7 +2143,7 @@ hr {
   display: block;
   width: 100%;
   padding: 8px 10px;
-  border-radius: 5px;
+  border-radius: var(--radius-4);
   font-family: inherit;
   font-size: 14px;
   color: inherit;
@@ -2420,7 +2426,7 @@ hr {
 
 .pagination a {
   padding: 0 10px;
-  border-radius: 4px;
+  border-radius: var(--radius-3);
 }
 
 /* ================ Login - Page ================ */
@@ -2519,6 +2525,7 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: auto;
 }
 
 .ban_list_comments_header + div {
@@ -2552,7 +2559,7 @@ hr {
 }
 
 .cMessage, .cAnnouncement {
-	border-radius: var(--radius-1);
+	border-radius: var(--radius-3);
 	position: relative;
 	margin-bottom: var(--sp-3);
 	color: #fff;
@@ -2610,7 +2617,7 @@ html[dir] .cMessage .cButton_link {
 	padding: 7px;
 	display: inline-block;
 	background: rgba(0,0,0,0.2);
-	border-radius: 3px;
+	border-radius: var(--radius-2);
 	margin-top: -7px;
 	color: rgba(255,255,255,0.8);
 }
