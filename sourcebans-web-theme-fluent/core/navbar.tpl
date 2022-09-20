@@ -75,25 +75,6 @@
   </div>
 
     <nav id="navBar" class="nav responsive_show:desktop">
-        <ul>
-            {literal}
-                <li style="padding:5px 5px"><br>
-                    <form method="get" action="index.php">
-                        <input type="hidden" name="p" value="banlist" />
-                        <input class="searchbox" alt="Search Bans" name="searchText" type="text" onfocus="this.value='';" onblur="if (this.value=='') {this.value=' Search Bans...';}" value=" Search Bans..." />
-                        <input type="submit" name="Submit" value="Search" style="cursor:pointer;" />
-                    </form>
-	            </li>
-	            <li style="padding:5px 5px">
-	                <form method="get" action="index.php">
-                        <input type="hidden" name="p" value="commslist" />
-                        <input class="searchbox" alt="Search Comms" name="searchText" type="text" onfocus="this.value='';" onblur="if (this.value=='') {this.value=' Search Comms...';}" value=" Search Comms... " />
-                        <input type="submit" name="Submit" value="Search" style="cursor:pointer;" />
-                    </form>
-	            </li>
-            {/literal}
-	    </ul>
-
         <div class="nav_tab">
             <ul>
                 {if $login}
