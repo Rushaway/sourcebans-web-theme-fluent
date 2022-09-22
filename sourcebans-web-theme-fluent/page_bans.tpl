@@ -103,7 +103,7 @@
                                 {/if}
                                 {if !$hideadminname}
                                     {if !empty($ban.admin)}
-                                        <td style="text-overflow: ellipsis; overflow: hidden; max-width: 10ch;">{$ban.admin|escape:'html'}</td>
+                                        <td>{$ban.admin|escape:'html'}</td>
                                     {else}
                                         <td class="text:italic">Admin deleted</td>
                                     {/if}

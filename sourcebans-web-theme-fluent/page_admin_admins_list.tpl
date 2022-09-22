@@ -30,7 +30,7 @@
                         <tbody>
                             {foreach from="$admins" item="admin"}
                                 <tr class="collapse">
-                                    <td style="text-overflow: ellipsis; overflow: hidden; max-width: 10ch;">{$admin.user} (<a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=admin"
+                                    <td>{$admin.user} (<a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=admin"
                                             title="Show bans">{$admin.bancount} bans</a> | <a
                                             href="./index.php?p=banlist&advSearch={$admin.aid}&advType=nodemo"
                                             title="Show bans without demo">{$admin.nodemocount} w.d.</a>)</td>
