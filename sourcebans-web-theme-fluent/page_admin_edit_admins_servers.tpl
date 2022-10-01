@@ -37,7 +37,7 @@
                             <input type="checkbox" class="form-check" name="servers[]" id="server_{$server.sid}"
                                 value="s{$server.sid}" onclick="" />
                             <label for="server_{$server.sid}" id="host_{$server.sid}" class="form-label:left">
-                                {$group.name}
+                                Please Wait...
                             </label>
                         </div>
                     {/foreach}

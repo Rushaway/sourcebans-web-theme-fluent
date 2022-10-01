@@ -75,19 +75,27 @@
 						onclick="xajax_ServerHostPlayers({$ban.server_id}, 'id', 'host_{$ban.ban_id}');"
 						{/if}
 						>
-              <tr class="collapse">
                 <td class="text:center">{$ban.mod_icon}</td>
 				<td>{$ban.ban_date}</td>
                   {if empty($ban.player)}
                     <td class="text:italic">No nickname present</td>
                   {else}
 				  <td>
-                    {if $view_comments && $ban.commentdata != "None" && $ban.commentdata|@count > 0}
-                        <div style="float:right;">
-                            {$ban.commentdata|@count} <i class="fas fa-clipboard-list fa-lg"></i>
-                        </div>
-                    {/if}
-                    {$ban.player|escape:'html'|stripslashes}
+                      {if $view_bans}
+                          <div style="float:right">
+                              {$ban.counts}
+                          </div>
+                      {/if}
+                      {if $view_comments && $ban.commentdata != "None" && $ban.commentdata|@count > 0}
+                          <div style="float:right">
+                              {$ban.commentdata|@count} <i class="fas fa-clipboard-list fa-lg"></i>
+                          </div>
+                      {/if}
+                      {if empty($ban.player)}
+                        <span class="text:italic">No nickname present</span>
+                      {else}
+                        <span>{$ban.player|escape:'html'|stripslashes}</span>
+                      {/if}
                     </td>
                   {/if}
 
