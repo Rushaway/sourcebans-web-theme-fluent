@@ -1,7 +1,7 @@
 <main>
   <div class="layout_topBar">
     <div class="layout_container flex flex-jc:end flex-ai:center">
-      <ul class="layout_topBar_action flex">
+      <ul class="SocialMedia layout_topBar_action flex">
         <li>
           <button id="user_action_change_dark" aria-label="Dark mode"><i class="fas fa-moon"></i></button>
         </li>
@@ -11,6 +11,71 @@
         <li id="jscolor_reset" class="jscolor_li" style="display: none;">
           <button aria-label="Reset color"><i class="fa fa-refresh"></i></button>
         </li>
+        
+<!-- Remove the comments balise if you to enable some SocialMedia Icons -->
+        <!-- 
+          <li class="responsive_show:desktop">
+            <a target="_blank" href="https://steamcommunity.com/groups/nide_css" rel="noopener" title="Our Steam Group">
+              <i class="fab fa-steam-symbol"></i>
+            </a>
+          </li>
+        -->
+
+        <!--
+          <li class="responsive_show:desktop">
+            <a target="_blank" href="https://www.facebook.com/Steam" rel="noopener" data-ipstooltip="" _title="Follow us on Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        -->
+
+        <!--
+          <li class="responsive_show:desktop">
+            <a target="_blank" href="https://twitter.com/aXen_1998" rel="noopener" data-ipstooltip="" _title="Follow us on Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        -->
+        
+        <!--
+          <li class="responsive_show:desktop">
+            <a target="_blank" href="https://www.instagram.com/zuck/" rel="noopener" data-ipstooltip="" _title="Follow us on Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        -->
+
+        <!--
+          <li class="responsive_show:desktop">
+            <a target="_blank" href="https://www.twitch.tv/zevent" rel="noopener" data-ipstooltip="" _title="Follow us on Twitch">
+              <i class="fab fa-twitch"></i>
+            </a>
+          </li>
+        -->
+
+        <!--
+          <li class="responsive_show:desktop">
+            <a target="_blank" href="https://discord.gg/XhByCBg" rel="noopener" data-ipstooltip="" _title="Join us on Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+          </li>
+        -->
+
+        <!--
+          <li class="responsive_show:desktop">
+            <a target="_blank" href="https://telegram.org/" rel="noopener" data-ipstooltip="" _title="Join us on Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+        -->
+
+        <!--
+          <li class="responsive_show:desktop">
+            <a target="_blank" href="https://youtube.com/embed/dQw4w9WgXcQ?rel=0;&amp;autoplay=1" rel="noopener" data-ipstooltip="" _title="Follow us on YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        -->
       </ul>
 
       <ul class="layout_topBar_userBar responsive_show:desktop flex flex-ai:center">

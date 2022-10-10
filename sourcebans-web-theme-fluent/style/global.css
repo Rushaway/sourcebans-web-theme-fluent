@@ -2649,3 +2649,64 @@ html[dir="rtl"] .cMessage_code {
 .ban_list_comments_header .fa-trash {
 	color: red;
 }
+
+/** ========== SocialMedia ========== **/
+.SocialMedia a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: transparent;
+	font-size: 18px !important;
+	color: var(--backdrop-text_color);
+}
+.SocialMedia a:hover {
+	text-decoration: none;
+}
+/** ========== SocialMedia ========== **/
+/** ========== Custom Link ========== **/
+
+.SocialMedia a[href*='facebook.com'] {
+	background-color: #304c87 !important;
+	color: white !important;
+}
+.SocialMedia a[href*='instagram.com'] {
+	background: linear-gradient(to right,#ff3019 0%,#c90477 100%);
+	margin-bottom: 2px;
+	color: white !important;
+}
+.SocialMedia a[href*='twitter.com'] {
+	background-color: #1da1f2 !important;
+	color: white !important;
+}
+.SocialMedia a[href*='steamcommunity.com'] {
+	background-color: #1b2838 !important;
+	color: white !important;
+}
+.SocialMedia a[href*='youtube.com'] {
+	background-color: red !important;
+	margin-bottom: 2px;
+	color: white !important;
+}
+.SocialMedia a[href*='twitch.tv'] {
+	background-color: #4b367c !important;
+	margin-left: 1px;
+	color: white !important;
+}
+.SocialMedia a[href*='discord.gg'],
+.SocialMedia a[href*='discordapp.com'] {
+	background-color: #7289da !important;
+	color: white !important;
+}
+.SocialMedia a[href*='telegram.org'] {
+	background-color: #29aaec !important;
+	color: white !important;
+}
+
+/** ========== SocialMedia ========== **/
+/** ========== Fix Icons.. ========== **/
+.fa-facebook:before {
+    margin-left: 1px;
+}
