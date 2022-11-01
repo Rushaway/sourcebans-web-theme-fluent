@@ -118,7 +118,7 @@
     </div>
 
     <div class="admin_tab_content_title">
-        <h2><i class="fas fa-home"></i>Dashboard Settings</h2>
+        <h2><i class="fas fa-home"></i> Dashboard Settings</h2>
     </div>
 
     <div class="padding">
@@ -347,6 +347,91 @@
             <div id="bans_customreason.msg" class="message message:error margin-top:half" style="display: none;">
             </div>
         </div>
+    </div>
+    
+	<div class="admin_tab_content_title">
+        <h2><i class="fa-solid fa-paper-plane"></i></i> Mails Settings</h2>
+    </div>
+
+    <div class="padding">
+        <div class="margin-bottom">
+            If leave blank, mails functions will not work and return an error 500.
+        </div>
+
+        <div class="margin-bottom:half">
+            <label for="mail_host" class="form-label form-label:bottom">
+                Host
+            </label>
+
+            <input type="text" TABINDEX=16 class="form-input form-full" id="mail_host" name="mail_host"
+                value="{$config_smtp[0]}" />
+
+            <div class="form-desc">
+                Enter your Host.
+            </div>
+			
+			<div id="mailhost.msg" class="message message:error margin-top:half" style="display: none;"></div>
+        </div>
+
+        <div class="margin-bottom:half">
+            <label for="mail_user" class="form-label form-label:bottom">
+                UserName
+            </label>
+
+            <input type="text" TABINDEX=17 class="form-input form-full" id="mail_user" name="mail_user"
+                value="{$config_smtp[1]}" />
+
+            <div class="form-desc">
+                Enter your UserName.
+            </div>
+			
+			<div id="mail_user.msg" class="message message:error margin-top:half" style="display: none;"></div>
+        </div>
+
+        <div class="margin-bottom:half">
+            <label for="mail_pass" class="form-label form-label:bottom">
+                Password
+            </label>
+
+            <input type="text" TABINDEX=18 class="form-input form-full" id="mail_pass"
+                name="mail_pass" placeholder="*******" />
+
+            <div class="form-desc">
+                Enter your password.
+            </div>
+
+            <div id="mail_pass.msg" class="message message:error margin-top:half" style="display: none;"></div>
+        </div>
+		
+		<div class="margin-bottom:half">
+            <label for="mail_port" class="form-label form-label:bottom">
+                Port
+            </label>
+
+            <input type="text" TABINDEX=19 class="form-input form-full" id="mail_port"
+                name="mail_port" value="{$config_smtp[2]}" />
+
+            <div class="form-desc">
+                Enter the port used.
+            </div>
+
+            <div id="mail_port.msg" class="message message:error margin-top:half" style="display: none;"></div>
+        </div>
+		
+		<div class="margin-bottom:half">
+			<input type="checkbox" TABINDEX=20 name="mail_verify_peer" class="form-check" id="mail_verify_peer" />
+			
+            <label for="mail_verify_peer" class="form-label form-label:bottom">
+                Verify SSL Certificate
+            </label>
+
+            <div class="form-desc">
+                Require verification of SSL certificate used.
+            </div>
+
+            <div id="mail_verify_peer.msg" class="message message:error margin-top:half" style="display: none;"></div>
+        </div>
+
     </div>
 
     <div class="padding flex flex-ai:center flex-jc:space-between">
