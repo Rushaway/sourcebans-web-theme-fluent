@@ -1,5 +1,10 @@
 <div class="layout_box">
     <div class="table padding">
+        {if $IN_SERVERS_PAGE && $access_bans}
+            <div class="responsive_show:desktop" style="text-align:right; width:100%;">
+                <small>Hint: Rightclick on a player to open a context menu with options to kick, ban or contact the player directly.</small>
+            </div>
+        {/if}
         <div class="table_box">
             <table>
                 <thead>
