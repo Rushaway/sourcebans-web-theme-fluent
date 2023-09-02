@@ -1,5 +1,8 @@
-{if $dashboard_text}
+{if $dashboard_text || $dashboard_title}
   <div class="layout_box padding margin-bottom">
+	  {if $dashboard_title}
+		  <b>{$dashboard_title}</b><br>
+	  {/if}
     {$dashboard_text}
   </div>
 {/if}
