@@ -123,7 +123,7 @@
 						{if $view_comments}
                         <li class="button button-success">{$ban.addcomment}</li>
 						{/if}
-						{if ($ban.unbanned == false && $ban.view_unban)}
+						{if isset($ban.unbanned) && ($ban.unbanned == false && $ban.view_unban)}
                           <li class="button button-important">{$ban.unban_link}</li>
                         {/if}
 						{if isset($ban.unbanned) && $ban.reban_link != false}
