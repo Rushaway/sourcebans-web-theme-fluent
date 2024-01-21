@@ -114,7 +114,7 @@
               <tr class="table_hide">
                 <td colspan="8">
                   <div class="collapse_content">
-                    <div class="padding flex flex-jc:start">
+                    <div class="padding flex flex-jc:start" style="overflow: auto;">
                       <ul class="ban_action responsive_show:desktop">
 					  {if $view_bans}
                         {if ($ban.view_edit && (!isset($ban.unbanned) || !$ban.unbanned))}
