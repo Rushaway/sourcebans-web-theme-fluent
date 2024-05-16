@@ -66,6 +66,7 @@
                       {foreach from=$webgroup_list item="webgrp"}
                         <option label="{$webgrp.name}" value="{$webgrp.gid}">{$webgrp.name}</option>
                       {/foreach}
+                      <option label="- No WebGroup Assigned -" value=" ">- No WebGroup Assigned -</option>
                     </select>
                   </div>
 
@@ -81,6 +82,7 @@
                         <option label="{$srvadmgrp.name}" value="{$srvadmgrp.name}">{$srvadmgrp.name}
                         </option>
                       {/foreach}
+                      <option label="- No Server Admin Group Assigned -" value=" ">- No Server Admin Group Assigned -</option>
                     </select>
                   </div>
 
@@ -95,6 +97,7 @@
                       {foreach from=$srvgroup_list item="srvgrp"}
                         <option label="{$srvgrp.name}" value="{$srvgrp.gid}">{$srvgrp.name}</option>
                       {/foreach}
+                      <option label="- No Server Group Assigned -" value=" ">- No Server Group Assigned -</option>
                     </select>
                   </div>
 
