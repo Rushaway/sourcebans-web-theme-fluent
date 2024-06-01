@@ -21,6 +21,7 @@
             For more information or help regarding a certain subject move your mouse over the question mark.
         </div>
         <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="action" value="importBans" />
             <div class="margin-bottom:half">
                 <label for="importFile" class="form-label form-label:bottom">
                     File
