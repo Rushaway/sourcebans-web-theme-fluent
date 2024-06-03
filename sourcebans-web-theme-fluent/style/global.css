@@ -1882,6 +1882,11 @@ td.listtable_2 {
   padding: 5px;
 }
 
+#current-theme-screenshot img {
+	height: 100%;
+	width: 100%;
+}
+
 .largetitle {
   font-size: 18px;
   border-bottom: 1px dotted #cdcdcd;
