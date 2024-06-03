@@ -112,7 +112,7 @@
                                                 {if $protest.ip == 'none' || $protest.ip == ''}
                                                     <span class="text:italic">No IP address present</span>
                                                 {else}
-                                                    <a href="http://geoiplookup.net/ip/{$protest.ip}" target="_blank" rel="noopener">{$protest.ip}</a>
+                                                    <a href="https://geoiplookup.net/geo/{$protest.ip}" target="_blank" rel="noopener">{$protest.ip}</a>
                                                 {/if}
                                             </li>
 
@@ -147,7 +147,7 @@
 
                                             <li>
                                                 <span><i class="fa-solid fa-network-wired"></i> Protester IP</span>
-                                                <a href="http://geoiplookup.net/ip/{$protest.pip}" target="_blank" rel="noopener">{$protest.pip}</a>
+                                                <a href="https://geoiplookup.net/geo/{$protest.pip}" target="_blank" rel="noopener">{$protest.pip}</a>
                                             </li>
 
                                             <li>

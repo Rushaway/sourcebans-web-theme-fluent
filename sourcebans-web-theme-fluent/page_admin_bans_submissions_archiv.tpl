@@ -129,7 +129,7 @@
                                                 {if $sub.sip == ""}
                                                     <span class="text:italic">No IP address present</span>
                                                 {else}
-                                                    <a href="http://geoiplookup.net/ip/{$sub.sip}" target="_blank" rel="noopener">{$sub.sip}</a>
+                                                    <a href="https://geoiplookup.net/geo/{$sub.sip}" target="_blank" rel="noopener">{$sub.sip}</a>
                                                 {/if}
                                             </li>
 
@@ -160,7 +160,7 @@
 
                                             <li>
                                                 <span><i class="fa-solid fa-network-wired"></i> Submitter IP</span>
-                                                <a href="http://geoiplookup.net/ip/{$sub.ip}" target="_blank" rel="noopener">{$sub.ip}</a>
+                                                <a href="https://geoiplookup.net/geo/{$sub.ip}" target="_blank" rel="noopener">{$sub.ip}</a>
                                             </li>
                                         </ul>
                                     </div>
