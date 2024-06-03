@@ -3,7 +3,7 @@
   --layout_main--color: rgb(var(--layout_main_code--color));
   --layout_main--color_0_3: rgba(var(--layout_main_code--color), 0.3);
   --layout_main--color_0_15: rgba(var(--layout_main_code--color), 0.15);
-  --container--width: 1630px;
+  --container--width: 2270px;
   --header--height: 80px;
   --theme-background: #edf0f4;
   --theme-text: #353c41;
@@ -691,7 +691,7 @@ span.right {
 }
 
 .layout_container {
-  max-width: var(--container--width);
+  /*max-width: var(--container--width);*/
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -2385,6 +2385,18 @@ hr {
   margin: 20px auto;
   padding: 0 15px;
   max-width: var(--container--width);
+}
+
+@media screen and (min-width: 980px) {
+	.admin_dashboard {
+	  display: -ms-grid;
+	  display: grid;
+	  -ms-grid-columns: minmax(25%, 1fr)[auto-fit];
+	  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+	  grid-gap: 10px;
+	  width: 100%;
+	  overflow-x: auto;
+	}
 }
 
 /* ================ JSColor ================ */
