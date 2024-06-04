@@ -2370,6 +2370,14 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .lists-mobile {
+    display: inline-flex !important;
+    justify-content: center !important;
+  }
+ .ban_action.responsive_hide\:desktop.lists-mobile {
+    padding: 5px 10px;
+    width: max-content;
+  }
 }
 
 /* ================ Main ================ */
@@ -2463,8 +2471,15 @@ hr {
           flex: 0 0 200px;
 }
 
-.ban_action li:not(:last-child) {
+.ban_action li {
   margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 980px) {
+	.ban_action li:not(:last-child) {
+	  margin-bottom: 10px;
+	}
 }
 
 .ban_list_detal {
