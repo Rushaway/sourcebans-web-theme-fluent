@@ -139,6 +139,25 @@
 					{/if}
                       </ul>
                       <ul class="ban_list_detal">
+                        <ul class="ban_action responsive_hide:desktop lists-mobile">
+                          {if $view_bans}
+                            {if ($ban.view_edit && (!isset($ban.unbanned) || !$ban.unbanned))}
+                              <li class="button button-primary lists-mobile">{$ban.edit_link}</li>
+                            {/if}
+                            {if $view_comments}
+                            <li class="button button-success lists-mobile">{$ban.addcomment}</li>
+                            {/if}
+                            {if ($ban.unbanned == false && $ban.view_unban)}
+                              <li class="button button-important lists-mobile">{$ban.unban_link}</li>
+                            {/if}
+                            {if isset($ban.unbanned) && $ban.reban_link != false}
+                              <li class="button button-important lists-mobile">{$ban.reban_link}</li>
+                            {/if}
+                            {if $ban.view_delete}
+                              <li class="button button-important lists-mobile">{$ban.delete_link}</li>
+                            {/if}
+                          {/if}
+                        </ul>
                         <li>
                           <span><i class="fas fa-user"></i> Player</span>
 
@@ -253,7 +272,7 @@
                       </ul>
 
                       {if $view_comments}
-                        <div class="ban_list_comments margin-left">
+                        <div class="ban_list_comments margin-left responsive_show:desktop">
                           <div class="layout_box_title">
                             <h2>Comments</h2>
                           </div>
