@@ -117,7 +117,7 @@
                                         <div class="collapse_content">
                                             <div class="padding flex flex-jc:start" style="overflow: auto;">
                                                 <ul class="ban_action responsive_show:desktop">
-							<li class="button button-light">{$ban.demo_link}</li>
+                                                        <li class="button button-light">{$ban.demo_link}</li>
                                                     {if !$login}
                                                         <li>
                                                             <a class="button button-success" href='index.php?p=login'>Admin ? Sign In</a>
@@ -148,6 +148,32 @@
                                                     {/if}
                                                 </ul>
                                                 <ul class="ban_list_detal">
+                                                    <ul class="ban_action responsive_hide:desktop lists-mobile">
+                                                        {if $view_bans}
+                                                            {if ($ban.view_edit && !$ban.unbanned)}
+                                                                <li class="button button-primary lists-mobile">{$ban.edit_link}</li>
+                                                            {/if}
+                                                            <li class="button button-success lists-mobile">{$ban.addcomment}</li>
+                                                            <li class="button button-infos lists-mobile">{$ban.blockcomm_link}</li>
+                                                            {if ($ban.unbanned == false && $ban.view_unban)}
+                                                                <li class="button button-important lists-mobile">{$ban.unban_link}</li>
+                                                            {/if}
+                                                            {if $ban.unbanned && $ban.reban_link != false}
+                                                                <li class="button button-important lists-mobile">{$ban.reban_link}</li>
+                                                            {/if}
+                                                            {if $ban.type == 0}
+                                                                {if $groupban}
+                                                                    <li class="button button-important lists-mobile">{$ban.groups_link}</li>
+                                                                {/if}
+                                                                {if $friendsban}
+                                                                    <li class="button button-important lists-mobile">{$ban.friend_ban_link}</li>
+                                                                {/if}
+                                                            {/if}
+                                                            {if $ban.view_delete}
+                                                                <li class="button button-important lists-mobile">{$ban.delete_link}</li>
+                                                            {/if}
+                                                        {/if}
+                                                    </ul>
                                                     <li>
                                                         <span><i class="fas fa-user"></i> Player</span>
                                                             {if empty($ban.player)}
@@ -309,6 +335,43 @@
                                                     </ul>
                                                 {/if}
                                             </div>
+                                            {if $view_comments}
+                                                {if $ban.commentdata != "None"}
+                                                    <ul class="ban_list_comments responsive_hide:desktop" style="display: contents;">
+                                                        <div class="layout_box_title">
+                                                            <h2><i class="fa-solid fa-comments"></i> Comments <i style="font-weight: normal;font-size: smaller;">(from the most recent to the oldest)</i></h2>
+                                                        </div>
+                                                        <ul>
+                                                            {foreach from=$ban.commentdata item="commenta"}
+                                                                <li>
+                                                                    <div class="layout_box-child padding">
+                                                                        <div class="ban_list_comments_header">
+                                                                            {if !empty($commenta.comname)}
+                                                                                <span class="text:bold">{$commenta.comname|escape:'html'}</span>
+                                                                            {else}
+                                                                                <span class="text:italic">Admin deleted</span>
+                                                                            {/if}
+                                                                            <span>{$commenta.added}</span>
+                                                                            {if $commenta.editcomlink != ""}
+                                                                                {$commenta.editcomlink} {$commenta.delcomlink}
+                                                                            {/if}
+                                                                        </div>            
+                                                                        <div class="margin-top flex flex-fd:column">
+                                                                            {$commenta.commenttxt}
+                                                                            {if !empty($commenta.edittime)}
+                                                                                <span class="margin-top:half text:italic">
+                                                                                    <i class="fas fa-pencil-alt"></i> Last edit
+                                                                                    {$commenta.edittime} by {if !empty($commenta.editname)}{$commenta.editname}{else}<i>Admin deleted</i>{/if}
+                                                                                </span>
+                                                                            {/if}
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            {/foreach}
+                                                        </ul>
+                                                    {/if}
+                                                </ul>
+                                            {/if}
                                         </div>
                                     </td>
                                 </tr>
