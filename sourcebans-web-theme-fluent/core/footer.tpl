@@ -8,7 +8,7 @@
 	      <span>Powered by <a href="https://www.sourcemod.net" target="_blank" rel="noopener">SourceMod</a></span>
 	    </div>
 	    <div class="flex flex-fd:column text:right">
-	      <span>Copyright © (website name)</span>
+	      <span>Copyright © {Config::get('template.title')}</span>
 	      <span><i class="fas fa-code"></i> Original <a href="https://github.com/Rushaway/sourcebans-web-theme-fluent" title="Theme Fluent for SourceBans++" target="_blank" rel="noopener">Theme</a> by <a href="https://axendev.net/" title="Theme by aXenDev" target="_blank" rel="noopener">aXenDev</a></span>
 	    </div>
 	  </div>
