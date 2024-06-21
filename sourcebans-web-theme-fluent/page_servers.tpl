@@ -21,8 +21,8 @@
 			<tbody>
 				{foreach from=$server_list item=server}
 				<tr id="opener_{$server.sid}" class="opener tbl_out" style="cursor:pointer;" onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'"{if !$IN_SERVERS_PAGE} onclick="{$server.evOnClick}"{/if}>
-				<td class="text:center">
-					<img src="images/games/{$server.icon}" alt="{$server.icon}" style="width: auto !important;height: auto !important;"/>
+				<td id="mod_{$server.sid} class="text:center">
+					<img src="images/games/{$server.icon}" alt="{$server.icon}" style="width:26px;height:26px;"/>
 				</td>
 				<td id="os_{$server.sid}" class="text:center"></td>
 				<td id="vac_{$server.sid}" class="text:center"></td>
