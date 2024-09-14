@@ -8,12 +8,8 @@
                 Please type your email address in the box below to have your password reset.
             </div>
 
-            <div id="msg-red" class="message message:error margin-bottom:half" style="display:none;">
-                The email address you supplied is not registered on the system.
-            </div>
-
-            <div id="msg-blue" class="message message:info margin-bottom:half" style="display:none;">
-                Please check your email inbox (and spam) for a link which will help you reset your password.
+            <div id="msg-blue msg-red" class="message message:info margin-bottom:half" style="display:none;">
+                If your email is registered, you will receive a password reset link shortly. Please check your email inbox (and spam).
             </div>
 
             <div class="margin-bottom:half">
