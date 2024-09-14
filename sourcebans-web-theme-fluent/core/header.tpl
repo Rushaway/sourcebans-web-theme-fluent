@@ -16,7 +16,7 @@
     <link rel="Shortcut Icon" href="themes/{$theme}/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="themes/{$theme}/style/global.css" />
     <link rel="stylesheet" type="text/css" href="themes/{$theme}/style/global.css.map" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
     <meta name="description" content="Sourcebans for website" />
     <script type="text/javascript" src="themes/{$theme}/scripts/sourcebans.js"></script>
     <script type="text/javascript" src="./scripts/mootools.js"></script>
@@ -27,25 +27,25 @@
 <body>
     <header class="header">
         <div class="layout_container responsive_hide:mobile flex flex-jc:space-between flex-ai:center">
-			<div class="flex flex-fd:column text:left">
-				<a href="./index.php?p=home" class="header_logo">
-					<img src="images/{$logo}" alt="SourceBans Logo" />
-				</a>
-			</div>
-			<div class="flex flex-fd:column text:right responsive_show:desktop">
+            <div class="flex flex-fd:column text:left">
+                <a href="./index.php?p=home" class="header_logo">
+                    <img src="images/{$logo}" alt="SourceBans Logo" />
+                </a>
+            </div>
+            <div class="flex flex-fd:column text:right responsive_show:desktop">
             {literal}
                     <form method="get" action="index.php">
                         <input type="hidden" name="p" value="banlist" />
                         <input class="searchbox" alt="Search Bans" name="searchText" type="text" onfocus="this.value='';" onblur="if (this.value=='') {this.value=' Search Bans...';}" value=" Search Bans..." />
                         <input class="button_search" type="submit" name="Submit" value="Search" />						
                     </form>
-	            
-	                <form method="get" action="index.php">
+                
+                    <form method="get" action="index.php">
                         <input type="hidden" name="p" value="commslist" />
                         <input class="searchbox" alt="Search Comms" name="searchText" type="text" onfocus="this.value='';" onblur="if (this.value=='') {this.value=' Search Comms...';}" value=" Search Comms... " />
                         <input class="button_search" type="submit" name="Submit" value="Search" />
                     </form> 
             {/literal}
-			</div>
+            </div>
         </div>
     </header>
