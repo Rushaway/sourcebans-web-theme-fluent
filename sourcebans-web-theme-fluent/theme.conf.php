@@ -6,7 +6,7 @@ define('theme_name', "SourceBans++ Fluent Design Theme Edition [PHP 8.1]");
 define('theme_author', "aXenDev + .Rushaway + Hackmastr");
 
 // Set the version of the theme here
-define('theme_version', "1.8.0 Git 185");
+define('theme_version', "1.8.0 Git 186");
 
 // Set the link of the theme here
 define('theme_link', "https://github.com/Rushaway/sourcebans-web-theme-fluent/");

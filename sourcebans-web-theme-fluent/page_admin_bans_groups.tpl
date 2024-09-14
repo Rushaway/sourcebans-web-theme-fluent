@@ -79,36 +79,30 @@
                     {else}
                         All groups the player {$player_name} is member of are listed here.<br />
                         Choose the steam groups you want to ban.<br /><br />
-                        <div id="steamGroupsText" name="steamGroupsText">Loading the groups...</div>
+                        <div id="steamGroupsText" name="steamGroupsText">
+                            <i class="fa-solid fa-spinner fa-spin fa-2x" style="font-size: 24px; margin-bottom: 10px;"></i>
+                            <span>Loading the groups. Please wait...</span>
+                        </div>
                         <div id="steamGroups" name="steamGroups" style="display:none;">
                             <table id="steamGroupsTable" name="steamGroupsTable" border="0" width="500px">
                                 <tr>
                                     <td height="16" class="listtable_1" style="padding:0px;width:3px;" align="center">
-                                        <div class="ok" style="height:16px;width:16px;cursor:pointer;" id="tickswitch" name="tickswitch"
-                                            onclick="TickSelectAll();"></div>
+                                        <div class="form-check" id="tickswitch" name="tickswitch" onclick="TickSelectAll();"></div>
                                     </td>
-                                    <td height="16" class="listtable_top" align="center"><b>Group</b></td>
+                                    <td height="auto" class="listtable_top" align="left"><b> All Steam Group(s)</b></td>
                                 </tr>
                             </table>
                             &nbsp;&nbsp;L&nbsp;&nbsp;<a href="#" onclick="TickSelectAll();return false;" title="Select All"
                                 name="tickswitchlink" id="tickswitchlink">Select All</a><br /><br />
-                            <table width="90%" style="border-collapse:collapse;" id="group.details" cellpadding="3">
-                                <tr>
-                                    <td valign="top" width="35%">
-                                        <div class="rowdesc">
-                                            {help_icon title="Group Ban Reason" message="Type the reason, why you are going to ban this steam community group."}Group
-                                            Ban Reason
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div align="left">
-                                            <textarea class="submit-fields" TABINDEX=2 cols="30" rows="5" id="groupreason"
-                                                name="groupreason" /></textarea>
-                                        </div>
-                                        <div id="groupreason.msg" class="badentry"></div>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="rowdesc">
+                                {help_icon title="Group Ban Reason" message="Type the reason, why you are going to ban this steam community group."}Group
+                                Ban Reason
+                            </div><br />
+                            <div align="left">
+                                <textarea class="submit-fields" TABINDEX=2 cols="30" rows="5" id="groupreason"
+                                    name="groupreason" /></textarea>
+                            </div>
+                            <div id="groupreason.msg" class="badentry"></div>
                             <input type="button" class="btn ok" onclick="CheckGroupBan();" name="gban" id="gban"
                                 onmouseover="ButtonOver('gban');" onmouseout="ButtonOver('gban');" value="Add Group Ban">
                         </div>
