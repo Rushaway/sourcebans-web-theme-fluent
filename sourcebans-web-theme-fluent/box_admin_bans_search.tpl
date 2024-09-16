@@ -108,7 +108,9 @@
                                                 <select class="form-select form-full" id="ban_type"
                                                     onmouseup="$('ban_type_').checked = true">
                                                     <option value="0" selected>Steam ID</option>
-                                                    <option value="1">IP Address</option>
+                                                    {if !$hideplayerips}
+                                                        <option value="1">IP Address</option>
+                                                    {/if}
                                                 </select>
                                             </div>
 
