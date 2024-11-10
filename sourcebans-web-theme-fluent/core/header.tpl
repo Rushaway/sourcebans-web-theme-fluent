@@ -71,7 +71,6 @@
                 searchInput.name = 'advSearch';
                 submitButton.name = 'advType';
                 submitButton.value = 'steamid';
-				handleSteamIDSearch(searchInput.value, 'steamid', `p=${pageValue}`);
             } else {
                 searchInput.name = 'searchText';
                 submitButton.name = 'Submit';
