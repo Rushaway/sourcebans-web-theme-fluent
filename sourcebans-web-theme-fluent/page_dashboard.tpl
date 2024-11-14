@@ -133,8 +133,12 @@
                 <td class="text:left">
                   {$player.date}
                 </td>
-				        <td class="text:left">
-                  <span>{$player.short_name|escape:'html'}</span>
+                <td class="text:left">
+                  {if empty($player.short_name)}
+                    <span class="text:italic">No nickname present</span>
+                  {else}
+                    <span>{$player.short_name|escape:'html'}</span>
+                  {/if}
                 </td>
               </tr>
             {/foreach}
