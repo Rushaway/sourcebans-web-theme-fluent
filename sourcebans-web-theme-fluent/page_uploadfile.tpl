@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="Shortcut Icon" href="../images/favicon.ico" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css">
 		<meta name="description" content="Sourcebans for website - Upload file" />
 		<title>Upload File : SourceBans</title>
 	</head>

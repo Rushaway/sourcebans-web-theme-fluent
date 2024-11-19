@@ -16,7 +16,7 @@
     <link rel="Shortcut Icon" href="themes/{$theme}/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="themes/{$theme}/style/global.css" />
     <link rel="stylesheet" type="text/css" href="themes/{$theme}/style/global.css.map" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css">
     <meta name="description" content="Sourcebans for website" />
     <script type="text/javascript" src="themes/{$theme}/scripts/sourcebans.js"></script>
     <script type="text/javascript" src="./scripts/mootools.js"></script>
