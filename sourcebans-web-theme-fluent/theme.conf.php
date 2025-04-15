@@ -1,12 +1,12 @@
 <?php
 // Set the name of this theme here
-define('theme_name', "SourceBans++ Fluent Design Theme Edition [PHP 8.1]");
+define('theme_name', "SourceBans++ Fluent Design Theme Edition [PHP 8.2]");
 
 // Set the author of this theme here
 define('theme_author', "aXenDev + .Rushaway + Hackmastr");
 
 // Set the version of the theme here
-define('theme_version', "1.8.1 Git 196");
+define('theme_version', "1.8.1 Git 197");
 
 // Set the link of the theme here
 define('theme_link', "https://github.com/Rushaway/sourcebans-web-theme-fluent/");

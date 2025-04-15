@@ -88,21 +88,21 @@
                             {/if}
                             <td class="text:center">{$ban.mod_icon}</td>
                             <td>{$ban.ban_date}</td>
-                                {if empty($ban.player)}
-                                    <td class="text:italic">No nickname present</td>
-                                {else}
-                                    <td>
-	    			  	                {if $view_comments && $ban.commentdata != "None" && $ban.commentdata|@count > 0}
-                                            <div style="float:right;">
-                                                {$ban.commentdata|@count} <i class="fas fa-clipboard-list fa-lg"></i>
-                                            </div>
-                                        {/if}
-                                        {if $ban.demo_available}
-                                            <i class="fas fa-video fa-lg"></i>
-                                        {/if}
-                                        {$ban.player|escape:'html'|smarty_stripslashes}
-                                    </td>
+                            <td class="{if empty($ban.player)}text:italic{/if}">
+                                {if $view_comments && $ban.commentdata != "None" && $ban.commentdata|@count > 0}
+                                    <div style="float:right;">
+                                        {$ban.commentdata|@count} <i class="fas fa-clipboard-list fa-lg"></i>
+                                    </div>
                                 {/if}
+                                {if $ban.demo_available}
+                                    <i class="fas fa-video fa-lg"></i>
+                                {/if}
+                                {if empty($ban.player)}
+                                    No nickname present
+                                {else}
+                                    {$ban.player|escape:'html'|smarty_stripslashes}
+                                {/if}
+                            </td>
                                 {if !$hideadminname}
                                     {if !empty($ban.admin)}
                                         <td>{$ban.admin|escape:'html'}</td>
