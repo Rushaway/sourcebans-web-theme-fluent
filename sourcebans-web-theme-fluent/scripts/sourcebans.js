@@ -884,7 +884,7 @@ function ShowBox(title, msg, color, redir, noclose) {
 
   const jsCde = `closeMsg('${redir}');`;
   $('dialog-control').setHTML(`<input name='dialog-close' onclick="${jsCde}" class='button button-success flex:11' onmouseover="ButtonOver('dialog-close')" onmouseout='ButtonOver("dialog-close")' id="dialog-close" value="OK" type="button">`);
-  $('dialog-control').setStyle('display', 'block');
+  $('dialog-control').setStyle('display', 'flex');
 
   /*
 	if (!noclose) {
